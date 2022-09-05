@@ -65,6 +65,7 @@
     padding: 0.7rem;
     outline: none;
     width: fit-content;
+    font-family: "RobotoBold", sans-serif;
 }
 .results{
     margin-top: 20px;
