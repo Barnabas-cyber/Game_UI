@@ -35,3 +35,9 @@ function playerRound(playerSelection, computerSelection) {
 
     return results;
 }
+
+//calling the game function
+// game()
+
+
+
