@@ -1,94 +1,113 @@
-/* styling the game */
+/* styling game */
 @font-face {
-    font-family: "RobotoBold";
-    src: url(fonts/Roboto-Bold.ttf) format("truetype");
+	font-family: "RobotoBold";
+	src: url(fonts/RobotoBold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "RobotoBoldBlack";
-    src: url(fonts/Roboto-Black.ttf) format("truetype");
+	font-family: "RobotoBoldBlack";
+	src: url(fonts/RobotoBoldBlack.ttf) format("truetype");
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    background-color: #ffe4c4;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background: #ffe4c4;
 }
 
-/* game div */
+/* game div*/
 .game {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
 }
 
-/* title */
+/* Title  */
 .title {
-    font-family: "RobotoBold", sans-serif;
-    font-size: 36px;
-    top: 0;
-    z-index: 2;
-    position: absolute;
+	position: absolute;
+	top: 0;
+	font-size: 36px;
+	z-index: 2;
 }
 
-/* three buttons */
-.options {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50vw;
-    margin-top: 2rem;
-}
-
-/* scores */
+/* Score */
 .score {
-    display: flex;
-    position: absolute;
-    top: 150px;
-    justify-content: space-evenly;
-    width: 40vw;
-    z-index: 1;
+	display: flex;
+	width: 40vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 70px;
+	z-index: 1;
+	font-family: "RobotoBold", sans-serif;
+}
+
+.player-count,
+.computer-count {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
     font-family: "RobotoBold", sans-serif;
 }
 
-.p-count,
-.c-count {
-    text-align: center;
-    /* margin-top: 1rem; */
-    font-size: 30px;
-
+/* thrre buttons */
+.options {
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	margin-top: 2rem;
 }
 
-/* styling of buttons */
-.paper,
+/* Styling the buttons */
 .rock,
-.scissors {
+.paper,
+.scissor {
+	padding: 0.5rem;
+	width: 100px;
+	border-radius: 5px;
+	background: #d2691e;
+	outline: none;
     font-family: "RobotoBold", sans-serif;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #d2691e;
-    outline: none;
-    border: none;
-    width: 100px;
+	cursor: pointer;
 }
 
-/* reload button */
+.move {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* Restart button */
 .reload {
-    margin-top: 2rem;
-    background: #d2691e;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 0.7rem;
-    outline: none;
-    width: fit-content;
-    font-family: "RobotoBold", sans-serif;
+	display: none;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: #d2691e;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
-.results {
-    margin-top: 20px;
-    font-size: 1.2rem;
+.result {
+	margin-top: 20px;
+	font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px) {
+	.title {
+		text-align: center;
+	}
+
+	.score {
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+
+	.options {
+		width: 100vw;
+	}
 }

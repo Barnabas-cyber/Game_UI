@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Game</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Rock Paper Scissor</title>
 </head>
-
 <body>
-    <section class="game">
-        <!-- title -->
-        <div class="title">Rock Paper Scissors</div>
-        <!-- display computer and player -->
-        <!-- player -->
-        <div class="score">
-            <!-- player -->
-            <div class="playerScore"></div>
-            <h3>Player ></h3>
-            <p class="p-count count">0</p>
-            <!-- computer -->
-            <div class="computerScore"></div>
-            <h3>Computer ></h3>
-            <p class="c-count count">0</p>
-        </div>
+	<section class="game">
+		<!--Title -->
+		<div class="title">Rock Paper Scissor</div>
+		
+		<!--Display Score of player and computer -->
+		<div class="score">
+			<div class="playerScore">
+				<h2>Player</h2>
+				<p class="player-count count">0</p>
 
+			</div>	
+			<div class="computerScore">
+				<h2>Computer</h2>
+				<p class="computer-count count">0</p>
 
-        <!-- game options -->
-        <div class="options">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
-        </div>
-        <!-- game results -->
-        <div class="results"></div>
-        <!-- game reload -->
-        <button class="reload">Restart</button>
-    </section>
-    <script src="script.js"></script>
+			</div>
+		</div>
+	
+		<div class="move">Choose your move</div>
+		
+		<!--Number of moves left before game ends -->
+		<div class="movesleft">Moves played:</div>
+		
+		<!--Options available to player to play game -->
+		<div class="options">
+			<button class="rock">Rock</button>
+			<button class="paper">Paper</button>
+			<button class="scissor">Scissors</button>
+		</div>
+		
+		<!--Final result of game -->
+		<div class="result"></div>
+		
+		<!--Reload the game -->
+		<button class="reload"></button>
+
+	</section>
+
+	<script src="script.js"></script>
 </body>
-
 </html>
